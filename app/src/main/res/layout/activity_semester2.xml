@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Semester2">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        app:srcCompat="@drawable/roman2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="575dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sub1name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="TECHICAL ENGLISH (HS8251)"
+                android:textColor="#174EF1"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/sub2name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="ENGINEERING MATHEMATICS-II (MA8251)"
+                android:textColor="#174EF1"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/sub2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <TextView
+                android:id="@+id/noofsub"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="PHYSICS FOR INFORMATION SCIENCE (PH8252)"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/sem"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="183dp" />
+
+            <TextView
+                android:id="@+id/su4name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="BASIC ELECTRICAL,ELECTRONICS AND MEASUREMENT ENGINEERING (BE8255)"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/sub4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/sub5name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="ENVIRONMENTAL SCIENCE AND ENGINEERING (GE8291)"
+                android:textColor="#174EF1"
+                android:textSize="23sp" />
+
+            <Spinner
+                android:id="@+id/sub5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <TextView
+                android:id="@+id/sub6name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="PROGRAMMING IN C (CS8251)"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="183dp" />
+
+
+
+            <TextView
+                android:id="@+id/lab1name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="ENGINEERING PRACTICES LABORATORY (GE8261)"
+                android:textSize="23sp" />
+
+            <Spinner
+                android:id="@+id/lab1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/lab2name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="C PROGRAMMING LABORATOTRY (CS8261)"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/lab2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+            <ImageButton
+                android:id="@+id/result"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/gpa" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

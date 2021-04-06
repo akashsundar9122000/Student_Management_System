@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Semester7">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        app:srcCompat="@drawable/roman7" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="575dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sub1name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="PRINCIPLES OF MANAGEMENT (MG8591)"
+                android:textColor="#174EF1"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/sub2name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="CRYPTOGRAPHY AND NETWORK SECURITY (CS8792)"
+                android:textColor="#174EF1"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <TextView
+                android:id="@+id/noofsub"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="CLOUD COMPUTING (CS8791)"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sem"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="183dp" />
+
+            <TextView
+                android:id="@+id/su4name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="OPEN ELECTIVE II"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/sub5name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="PROFESSIONAL ELECTIVE II"
+                android:textColor="#174EF1"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <TextView
+                android:id="@+id/sub6name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="PROFESSIONAL ELECTIVE III"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="183dp" />
+
+
+
+            <TextView
+                android:id="@+id/lab1name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="CLOUD COMPUTING LABORATORY (CS8711)"
+                android:textSize="23sp" />
+
+            <Spinner
+                android:id="@+id/lab1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/lab2name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="SECURITY LABORATORY(IT8761)"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/lab2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+
+            <ImageButton
+                android:id="@+id/result"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/gpa" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

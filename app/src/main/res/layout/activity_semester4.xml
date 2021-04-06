@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Semester4">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        app:srcCompat="@drawable/roman4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="575dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sub1name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="PROBABLITY AND QUEUEING THEORY (MA8402)"
+                android:textColor="#174EF1"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/sub1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/sub2name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="COMPUTER ARCHITECTURE (CS8491)"
+                android:textColor="#174EF1"
+                android:textSize="27sp" />
+
+            <Spinner
+                android:id="@+id/sub2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <TextView
+                android:id="@+id/noofsub"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="DATABASE MANAGEMENT SYSTEM (CS8492)"
+                android:textSize="27sp" />
+
+            <Spinner
+                android:id="@+id/sem"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="183dp" />
+
+            <TextView
+                android:id="@+id/su4name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="DESIGN AND ANALYSIS OF ALGORITHMS(CS8451)"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/sub4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/sub5name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="OPERATING SYSTEMS(CS8493)"
+                android:textColor="#174EF1"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="-16dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <TextView
+                android:id="@+id/sub6name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="SOFTWARE ENGINEERING(CS8494)"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/sub6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="183dp" />
+
+
+
+            <TextView
+                android:id="@+id/lab1name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="OPERATING SYSTEM LABORATORY(CS8461)"
+                android:textSize="23sp" />
+
+            <Spinner
+                android:id="@+id/lab1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/lab2name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="DATABASE MANAGEMENT SYSTEM LABORATORY (CS8481)"
+                android:textSize="23sp" />
+
+            <Spinner
+                android:id="@+id/lab2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/lab3name"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textColor="#174EF1"
+                android:text="ADVANCED READING AND WRITING (HS8461)"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/lab3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:outlineAmbientShadowColor="#E33030"
+                android:spinnerMode="dropdown" />
+
+
+            <ImageButton
+                android:id="@+id/result"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/gpa" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
