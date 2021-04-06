@@ -153,6 +153,68 @@
             android:gravity="center"/>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/period4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="4dp"
+            android:clipChildren="true"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:background="?attr/selectableItemBackgroundBorderless">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--visible content-->
+                <LinearLayout
+                    android:id="@+id/Visible4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/four"
+                        app:tint="#555555" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4th Period (11.10 AM - 11.50 AM)"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="15dp"
+                        android:textColor="#333333"/>
+                </LinearLayout>
+                <!--end visible content-->
+
+                <!--hidden content-->
+                <LinearLayout
+                    android:id="@+id/Hidden4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Subject Code : CS8607 \nSubject Name : Mobile computing\nStaff : Mrs. Padmapriya K"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
             android:id="@+id/period3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -212,6 +274,7 @@
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
 
 
     </GridLayout>

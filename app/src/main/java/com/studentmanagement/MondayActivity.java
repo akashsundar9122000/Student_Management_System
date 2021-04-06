@@ -8,7 +8,7 @@ import android.view.View;
 
 public class MondayActivity extends AppCompatActivity {
 
-    private CardView p1,p2,p3;
+    private CardView p1,p2,p3,p4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MondayActivity extends AppCompatActivity {
         p1=findViewById(R.id.period1);
         p2=findViewById(R.id.period2);
         p3=findViewById(R.id.period3);
+        p4=findViewById(R.id.period4);
 
         p1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,13 @@ public class MondayActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 View hiddenView = p3.findViewById(R.id.Hidden3);
+                hiddenView.setVisibility( hiddenView.getVisibility() == View.GONE ? View.VISIBLE : View.GONE);
+            }
+        });
+        p4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View hiddenView = p4.findViewById(R.id.Hidden4);
                 hiddenView.setVisibility( hiddenView.getVisibility() == View.GONE ? View.VISIBLE : View.GONE);
             }
         });
