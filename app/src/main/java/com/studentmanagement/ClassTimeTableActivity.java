@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class ClassTimeTableActivity extends AppCompatActivity {
-    private CardView mon,tue,wed,thu;
+    private CardView mon,tue,wed,thu,fri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class ClassTimeTableActivity extends AppCompatActivity {
         tue=findViewById(R.id.tue);
         wed=findViewById(R.id.wed);
         thu=findViewById(R.id.thu);
+        fri=findViewById(R.id.fri);
 
         mon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,14 @@ public class ClassTimeTableActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent gpa_intent = new Intent(ClassTimeTableActivity.this,ThursdayActivity.class);
+                startActivity(gpa_intent);
+            }
+        });
+
+        fri.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gpa_intent = new Intent(ClassTimeTableActivity.this,FridayActivity.class);
                 startActivity(gpa_intent);
             }
         });
