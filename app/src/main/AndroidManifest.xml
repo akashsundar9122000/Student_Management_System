@@ -9,12 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentManagement">
-        <activity android:name=".MondayActivity"
-            android:label="Monday"></activity>
-        <activity android:name=".ClassTimeTableActivity"
-            android:label="Class Time Table"/>
-        <activity android:name=".TimeTableActivity"
-            android:label="Time Table"/>
+        <activity android:name=".TuesdayActivity"
+            android:label="Tuesday"></activity>
+        <activity
+            android:name=".MondayActivity"
+            android:label="Monday" />
+        <activity
+            android:name=".ClassTimeTableActivity"
+            android:label="Class Time Table" />
+        <activity
+            android:name=".TimeTableActivity"
+            android:label="Time Table" />
         <activity
             android:name=".EightSemester"
             android:label="CGPA CALCULATOR"
