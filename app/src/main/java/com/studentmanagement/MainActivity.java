@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         About_Me=findViewById(R.id.about_me);
-        Time_Table=findViewById(R.id.sem2);
-        Class_Room=findViewById(R.id.sem3);
-        Semester=findViewById(R.id.sem4);
-        Extra_Curricular =findViewById(R.id.sem5);
-        GPA_Calculator=findViewById(R.id.sem6);
+        Time_Table=findViewById(R.id.timetable);
+        Class_Room=findViewById(R.id.classroom);
+        Semester=findViewById(R.id.semester);
+        Extra_Curricular =findViewById(R.id.extracurricular);
+        GPA_Calculator=findViewById(R.id.calculator);
 
         About_Me.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +73,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent gpa_intent = new Intent(MainActivity.this,GPACalculatorActivity.class);
+                startActivity(gpa_intent);
+            }
+        });
+
+        Semester.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gpa_intent = new Intent(MainActivity.this,SemesterActivity.class);
                 startActivity(gpa_intent);
             }
         });
