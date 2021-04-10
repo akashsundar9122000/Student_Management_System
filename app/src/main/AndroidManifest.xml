@@ -8,8 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StudentManagement">
-        <activity android:name=".SemesterActivity"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".ClassRoomActivity"></activity>
+        <activity android:name=".PreviousSemester2Activity" />
+        <activity android:name=".PreviousSemester1Activity" />
+        <activity android:name=".PreviousSemesterActivity" />
+        <activity android:name=".SemesterActivity" />
         <activity
             android:name=".SaturdayActivity"
             android:label="Saturday" />
@@ -37,72 +41,72 @@
         <activity
             android:name=".EightSemester"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".SevenSemester"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+            />
         <activity
             android:name=".SixSemester"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".FiveSemester"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".FourSemester"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".ThreeSemester"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".TwoSemester"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".OneSemester"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".CalculateCGPAActivity"
             android:label="CGPA CALCULATOR"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity android:name=".ResultActivity" />
         <activity
             android:name=".Semester8"
             android:label="SEMESTER 8"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".Semester7"
             android:label="SEMESTER 7"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".Semester6"
             android:label="SEMESTER 6"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".Semester5"
             android:label="SEMESTER 5"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".Semester4"
             android:label="SEMESTER 4"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".Semester3"
             android:label="SEMESTER 3"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".Semester2"
             android:label="SEMESTER 2"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".Semester1"
             android:label="SEMESTER 1"
-            android:theme="@style/Theme.gpa" />
+             />
         <activity
             android:name=".calculategpaactivity"
             android:label="GPA CALCULATOR" />

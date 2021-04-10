@@ -146,7 +146,7 @@
 
                 android:textSize="20dp"
                 android:layout_gravity="center"
-                android:textColor="@color/purple_500"
+                android:textColor="@color/colorAccent"
                 android:text="Break (10.10 AM - 10.20 AM)"
                 android:layout_row="3"
                 android:layout_column="0"
@@ -348,7 +348,7 @@
 
                 android:textSize="20dp"
                 android:layout_gravity="center"
-                android:textColor="@color/purple_500"
+                android:textColor="@color/colorAccent"
                 android:text="Lunch (12.40 PM - 1.14 PM)"
                 android:layout_row="7"
                 android:layout_column="0"

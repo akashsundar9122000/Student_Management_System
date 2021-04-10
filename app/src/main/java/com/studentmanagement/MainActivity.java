@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         Extra_Curricular =findViewById(R.id.extracurricular);
         GPA_Calculator=findViewById(R.id.calculator);
 
+
+
         About_Me.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         Class_Room.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent class_room_intent = new Intent(MainActivity.this,ProfileActivity.class);
+                Intent class_room_intent = new Intent(MainActivity.this,ClassRoomActivity.class);
                 startActivity(class_room_intent);
             }
         });
