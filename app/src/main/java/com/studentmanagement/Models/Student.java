@@ -3,14 +3,14 @@ package com.studentmanagement.Models;
 public class Student {
     public String first_name,last_name,date_of_birth,roll_no,email_id,phone,father_name,mother_name,cgpa
     ,gender,address,city,state,pincode,profile_pic,qualification,institution,
-            year_of_passing,current_year,standing_arrears,history_of_arrear,created_by;
+            year_of_passing,current_year,standing_arrear,history_of_arrear,created_by;
 
 
     public Student() {
 
     }
 
-    public Student(String first_name, String last_name, String date_of_birth, String roll_no, String email_id, String phone, String father_name, String mother_name, String cgpa, String gender, String address, String city, String state, String pincode, String profile_pic, String qualification, String institution, String year_of_passing, String current_year, String standing_arrears, String history_of_arrear, String created_by) {
+    public Student(String first_name, String last_name, String date_of_birth, String roll_no, String email_id, String phone, String father_name, String mother_name, String cgpa, String gender, String address, String city, String state, String pincode, String profile_pic, String qualification, String institution, String year_of_passing, String current_year, String standing_arrear, String history_of_arrear, String created_by) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.date_of_birth = date_of_birth;
@@ -30,7 +30,7 @@ public class Student {
         this.institution = institution;
         this.year_of_passing = year_of_passing;
         this.current_year = current_year;
-        this.standing_arrears = standing_arrears;
+        this.standing_arrear = standing_arrear;
         this.history_of_arrear = history_of_arrear;
         this.created_by = created_by;
     }
@@ -187,12 +187,12 @@ public class Student {
         this.current_year = current_year;
     }
 
-    public String getStanding_arrears() {
-        return standing_arrears;
+    public String getStanding_arrear() {
+        return standing_arrear;
     }
 
-    public void setStanding_arrears(String standing_arrears) {
-        this.standing_arrears = standing_arrears;
+    public void setStanding_arrear(String standing_arrear) {
+        this.standing_arrear = standing_arrear;
     }
 
     public String getHistory_of_arrear() {

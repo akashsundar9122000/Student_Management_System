@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.studentmanagement.Models.Extra_curricular;
+import com.studentmanagement.Models.ExtraCurricular;
 
 import java.util.List;
 
@@ -16,12 +16,12 @@ import androidx.recyclerview.widget.RecyclerView;
 public class Extra_curricular_Adapter extends RecyclerView.Adapter<Extra_curricular_Adapter.ImageViewHolder> {
 
     private Context mContext;
-    private List<Extra_curricular> mFeature;
+    private List<ExtraCurricular> mFeature;
 
 
 
 
-    public Extra_curricular_Adapter(Context context, List<Extra_curricular> features){
+    public Extra_curricular_Adapter(Context context, List<ExtraCurricular> features){
         mContext = context;
         mFeature = features;
     }
@@ -36,7 +36,7 @@ public class Extra_curricular_Adapter extends RecyclerView.Adapter<Extra_curricu
     @Override
     public void onBindViewHolder(@NonNull final ImageViewHolder holder, final int position) {
 
-        final Extra_curricular feature = mFeature.get(position);
+        final ExtraCurricular feature = mFeature.get(position);
 
         holder.Activity.setText(feature.getActivity());
         holder.Orgnaisation.setText(feature.getOrganisation());
@@ -56,7 +56,7 @@ public class Extra_curricular_Adapter extends RecyclerView.Adapter<Extra_curricu
         public ImageViewHolder(View itemView) {
             super(itemView);
 
-            Activity = itemView.findViewById(R.id.activity);
+            Activity = itemView.findViewById(R.id.activity_name);
             Orgnaisation = itemView.findViewById(R.id.organisation);
         }
     }

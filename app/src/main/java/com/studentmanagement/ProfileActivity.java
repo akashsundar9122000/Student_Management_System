@@ -98,7 +98,7 @@ public class ProfileActivity extends AppCompatActivity {
                 year_of_passing.setText(student.getYear_of_passing());
                 current_year.setText(student.getCurrent_year());
                 institution.setText(student.getInstitution());
-                standing_arrear.setText(student.getStanding_arrears());
+                standing_arrear.setText(student.getStanding_arrear());
                 history_of_arrear.setText(student.getHistory_of_arrear());
                 if (student.getProfile_pic().isEmpty())
                     Glide.with(getApplicationContext()).load(R.drawable.about_me).into(profile_image);

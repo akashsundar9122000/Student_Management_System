@@ -1,14 +1,10 @@
 package com.studentmanagement;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
-import android.media.tv.TvContract;
-import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -18,74 +14,83 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.StorageTask;
-import com.studentmanagement.Models.Extra_curricular;
+import com.studentmanagement.Adapter.ExtraCurricularAdapter;
+import com.studentmanagement.Models.ExtraCurricular;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class ExtraCurricularActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-    private RecyclerView Extra_Curricular_List;
-    private Extra_curricular_Adapter programAdapter;
-    private List<Extra_curricular> extraCurricularList;
-    private DatabaseReference mExtracurricularDatabase;
-    private FloatingActionButton add;
-    private FirebaseUser mFirebaseUser;
-    private String mCurrentUserId;
-    private Uri mImageUri;
-    private StorageTask mUploadTask;
-    private StorageReference mProfileImageStorage;
-    private DatabaseReference mExtraCurricularDatabase;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_extra_curricular);
 
-        mFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+    public class ExtraCurricularActivity extends AppCompatActivity {
+        private RecyclerView ExtraCurricular_List;
+        private FloatingActionButton Add;
+
+        private ExtraCurricularAdapter extraCurricularAdapter;
+        private List<ExtraCurricular> extraCurricularList;
+        private DatabaseReference mExtraCurricularDatabase;
+
+        private FirebaseUser mFirebaseUser;
+        private String mCurrentUserId;
+
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_extra_curricular);
+
+
+            mFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         mCurrentUserId = mFirebaseUser.getUid();
 
-        mExtraCurricularDatabase = FirebaseDatabase.getInstance().getReference("Extra_Curricular").child(mCurrentUserId);
+        mExtraCurricularDatabase = FirebaseDatabase.getInstance().getReference("Extracurricular").child(mCurrentUserId);
         mExtraCurricularDatabase.keepSynced(true);
 
-        Extra_Curricular_List =  findViewById(R.id.extra_curricular_list);
-        Extra_Curricular_List.setHasFixedSize(true);
+        ExtraCurricular_List = findViewById(R.id.extracurricular_list);
+        ExtraCurricular_List.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(ExtraCurricularActivity.this);
         mLayoutManager.setReverseLayout(true);
         mLayoutManager.setStackFromEnd(true);
-        Extra_Curricular_List.setLayoutManager(mLayoutManager);
+        ExtraCurricular_List.setLayoutManager(mLayoutManager);
         extraCurricularList = new ArrayList<>();
-        programAdapter = new Extra_curricular_Adapter(ExtraCurricularActivity.this, extraCurricularList);
-        Extra_Curricular_List.setAdapter(programAdapter);
+        extraCurricularAdapter = new ExtraCurricularAdapter(ExtraCurricularActivity.this, extraCurricularList);
+        ExtraCurricular_List.setAdapter(extraCurricularAdapter);
 
-        mExtracurricularDatabase = FirebaseDatabase.getInstance().getReference().child("Extra_Curricular").child(mCurrentUserId);
-        mExtracurricularDatabase.keepSynced(true);
-        readPrograms();
-        add=findViewById(R.id.add);
+        readExtraCurricular();
+        Add = findViewById(R.id.add);
 
-        add.setOnClickListener(new View.OnClickListener() {
+        Add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent add_extra_curricular=new Intent(ExtraCurricularActivity.this,NewExtraCurricularActivity.class);
-                startActivity(add_extra_curricular);
+                Intent add_extracurricular=new Intent(ExtraCurricularActivity.this,NewExtraCurricularActivity.class);
+                startActivity(add_extracurricular);
             }
         });
 
 
-    }
-    private void readPrograms() {
 
-        mExtracurricularDatabase.addValueEventListener(new ValueEventListener() {
+    }
+
+    private void readExtraCurricular() {
+
+        mExtraCurricularDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 extraCurricularList.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                     Extra_curricular  Extra_curricular = snapshot.getValue(Extra_curricular.class);
-                    extraCurricularList.add(Extra_curricular);
+                    ExtraCurricular extraCurricular = snapshot.getValue(ExtraCurricular.class);
+                    extraCurricularList.add(extraCurricular);
+
                 }
-                programAdapter.notifyDataSetChanged();
+                Collections.reverse(extraCurricularList);
+                extraCurricularAdapter.notifyDataSetChanged();
             }
 
             @Override

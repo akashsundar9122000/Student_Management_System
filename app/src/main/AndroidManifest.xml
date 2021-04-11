@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.studentmanagement">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE "/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -117,7 +120,8 @@
         <activity
             android:name=".GPACalculatorActivity"
             android:label="GPA OR CGPA CALCULATOR" />
-        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".EditProfileActivity"
+            android:theme="@style/OtherAppTheme"/>
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
