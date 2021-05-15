@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         Time_Table.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent time_table_intent = new Intent(MainActivity.this,TimeTableActivity.class);
+                Intent time_table_intent = new Intent(MainActivity.this,CalenderActivity.class);
                 startActivity(time_table_intent);
             }
         });

@@ -65,12 +65,14 @@ public class ExtraCurricularAdapter extends RecyclerView.Adapter<ExtraCurricular
         });
         holder.Pdf_Name.setText(FirebaseStorage.getInstance().getReferenceFromUrl(extraCurricular.getUrl()).getName());
 
-        mExtraCurricularDatabase = FirebaseDatabase.getInstance().getReference("Extracurricular").child(extraCurricular.getUser_id()).child(extraCurricular.getExtracurricular_key());
+
 
 
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
+
+                mExtraCurricularDatabase = FirebaseDatabase.getInstance().getReference("Extracurricular").child(extraCurricular.getUser_id()).child(extraCurricular.getExtracurricular_key());
 
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(mContext);
                 builder1.setMessage("Do you want to Delete?");
