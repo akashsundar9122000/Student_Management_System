@@ -126,6 +126,8 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".CalenderActivity"/>
+        <activity android:name=".NewPreviousSemesterActivity"/>
+
         <activity
             android:name=".SplashActivity"
             android:theme="@style/Theme.Splash">

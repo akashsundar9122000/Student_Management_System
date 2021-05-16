@@ -18,7 +18,17 @@ public class SemesterActivity extends AppCompatActivity {
 
         previous=findViewById(R.id.previoussemester);
 
+        current=findViewById(R.id.currentsemester);
+
         previous.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent gpa_intent = new Intent(SemesterActivity.this,PreviousSemesterActivity.class);
+                startActivity(gpa_intent);
+            }
+        });
+
+        current.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent gpa_intent = new Intent(SemesterActivity.this,PreviousSemesterActivity.class);

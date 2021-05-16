@@ -26,9 +26,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-
-
-
     public class ExtraCurricularActivity extends AppCompatActivity {
         private RecyclerView ExtraCurricular_List;
         private FloatingActionButton Add;
@@ -45,7 +42,6 @@ import androidx.recyclerview.widget.RecyclerView;
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_extra_curricular);
-
 
             mFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         mCurrentUserId = mFirebaseUser.getUid();
